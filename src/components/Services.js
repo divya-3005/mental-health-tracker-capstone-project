@@ -11,15 +11,12 @@ function Services() {
   const [longTerm, setLongTerm] = useState([]);
   const [goalInput, setGoalInput] = useState('');
   const [goalType, setGoalType] = useState('short');
-  // Focus timer state
   const [timer, setTimer] = useState(1500); // 25 min default
   const [isRunning, setIsRunning] = useState(false);
   const [customMinutes, setCustomMinutes] = useState(25);
   const [showTimesUp, setShowTimesUp] = useState(false);
   const timerRef = useRef(null);
-  // Remove beepRef and audio logic
 
-  // Timer logic
   React.useEffect(() => {
     if (isRunning) {
       setShowTimesUp(false);
