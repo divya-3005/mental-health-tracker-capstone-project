@@ -1,0 +1,193 @@
+.mood-hero {
+  width: 100%;
+  min-height: 120px;
+  background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  margin-top: 60px;
+}
+
+.mood-hero-content {
+  padding: 40px 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.mood-hero-content h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.25);
+}
+
+.mood-box {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  background: #f7faf7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.mood-quiz-btn {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: background 0.2s;
+}
+
+.mood-quiz-btn:hover {
+  background: #1b5e20;
+}
+
+.mood-quiz-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.mood-quiz-back {
+  background: #bdbdbd;
+  color: #222;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-right: 8px;
+  transition: background 0.2s;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.mood-quiz-back:hover {
+  background: #888;
+  color: #fff;
+}
+
+.mood-quiz-back-bottom {
+  position: static;
+  display: block;
+  margin: 24px auto 0 auto;
+  width: fit-content;
+}
+
+.mood-quiz-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+  text-align: center;
+  position: relative;
+}
+
+.mood-quiz-close {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+
+.mood-quiz-close:hover {
+  background: #b71c1c;
+}
+
+.mood-graph-section {
+  margin-top: 36px;
+}
+
+.mood-graph-section h3 {
+  color: #2e7d32;
+  margin-bottom: 18px;
+}
+
+.mood-line-graph {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+  margin-bottom: 10px;
+}
+
+.mood-graph-labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  color: #2e7d32;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mood-quiz-q {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #2e7d32;
+}
+
+.mood-quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.mood-quiz-option {
+  background: #e0f2f1;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mood-quiz-option:hover {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.mood-quiz-submit {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+}
+
+.mood-quiz-submit:hover {
+  background: #1b5e20;
+}
+
+.mood-quiz-done {
+  color: #2e7d32;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-align: center;
+} 

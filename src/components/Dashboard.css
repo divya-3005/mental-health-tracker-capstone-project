@@ -1,0 +1,78 @@
+.dashboard-container {
+  max-width: 1000px;
+  margin: 80px auto 0 auto;
+  padding: 30px 20px;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2.2rem;
+  margin-bottom: 36px;
+  letter-spacing: 2px;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.dashboard-card {
+  background: #f7faf7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  padding: 32px 24px;
+  min-width: 320px;
+  max-width: 420px;
+  flex: 1 1 320px;
+  text-align: center;
+}
+
+.dashboard-journal-preview {
+  margin-top: 16px;
+  text-align: left;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 10px;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+  height: 120px;
+  overflow-y: auto;
+}
+
+.dashboard-journal-date {
+  color: #2e7d32;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.dashboard-journal-text {
+  color: #222;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.dashboard-mood-graph {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+  margin-bottom: 10px;
+}
+
+.dashboard-mood-labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  color: #2e7d32;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
