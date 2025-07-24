@@ -67,15 +67,14 @@ function Mood() {
     let total = 0;
     let count = 0;
     answers.forEach((a, i) => {
-      if (i < 5) total += a + 1; // MC: 0-3 -> 1-4
-      else total += a + 1; // Rating: 0-4 -> 1-5
+      if (i < 5) total += a + 1;
+      else total += a + 1;
       count++;
     });
     const avg = Math.round(total / count);
-    // Update moodData for today (last in array)
-    const today = new Date().getDay(); // 0=Sun, 1=Mon...
+    const today = new Date().getDay();
     const newMoodData = [...moodData];
-    newMoodData[today === 0 ? 6 : today - 1] = avg; // Make Mon=0, Sun=6
+    newMoodData[today === 0 ? 6 : today - 1] = avg;
     setMoodData(newMoodData);
     setQuizDone(true);
     setTimeout(() => {
@@ -90,8 +89,6 @@ function Mood() {
     setAnswers([...answers, ans]);
     setQuizStep(quizStep + 1);
   }
-
-  // Reset quiz if closed
   function handleCloseQuiz() {
     setShowQuiz(false);
     setQuizStep(0);
