@@ -21,7 +21,7 @@
 .service-card {
   background: #f7faf7;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
   padding: 32px 24px;
   text-align: center;
   transition: box-shadow 0.2s, transform 0.2s;
@@ -44,15 +44,42 @@
 }
 
 .service-card.clickable:hover {
-  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
   transform: translateY(-4px) scale(1.03);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
-} 
+  .service-card {
+    min-width: unset;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .meditation-content, .goals-content, .focus-content {
+    min-width: 90vw;
+    width: 98vw;
+    padding: 18px 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-title {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  .service-card {
+    padding: 18px 8px;
+    font-size: 0.98rem;
+  }
+  .meditation-content, .goals-content, .focus-content {
+    padding: 10px 2px;
+    min-width: 98vw;
+    width: 100vw;
+  }
+}
 
 .meditation-modal {
   position: fixed;
@@ -68,7 +95,7 @@
   background: #fff;
   border-radius: 10px;
   padding: 32px 24px;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
   text-align: center;
   position: relative;
 }
@@ -103,7 +130,7 @@
   background: #fff;
   border-radius: 10px;
   padding: 32px 24px;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
   text-align: center;
   position: relative;
   min-width: 340px;
@@ -139,7 +166,7 @@
   background: #fff;
   border-radius: 10px;
   padding: 32px 24px;
-  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
   text-align: center;
   position: relative;
   min-width: 340px;
