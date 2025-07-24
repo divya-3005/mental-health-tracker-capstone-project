@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
 }
 
 .navbar-title {
@@ -87,14 +87,76 @@
   border-color: #1b5e20;
 }
 
-/* Add top margin to main content to prevent it from being hidden behind the navbar */
-.home-hero {
-  margin-top: 60px;
-} 
-
 .navbar-link, .navbar-link.active {
   height: 38px;
   box-sizing: border-box;
   padding: 6px 10px;
   margin: 0 2px;
+} 
+
+.navbar-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #2e7d32;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 1100;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .navbar-hamburger {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+  }
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    background: #eee;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+    position: absolute;
+    left: 0;
+    top: 48px;
+    z-index: 1001;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-menu.open {
+    display: flex;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+    gap: 0;
+    position: static;
+    left: unset;
+    transform: none;
+  }
+  .navbar-auth {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .navbar-link, .navbar-link.active {
+    width: 100%;
+    margin: 2px 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 1.05rem;
+  }
 } 
