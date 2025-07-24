@@ -10,6 +10,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 60px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
 }
 
 .blog-hero-content {
@@ -53,7 +54,7 @@
 .blog-card {
   background: #f7faf7;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
   padding: 24px 18px;
   text-align: left;
   display: flex;
@@ -84,4 +85,36 @@
 
 .blog-read-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .blog-hero {
+    min-height: 80px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+  .blog-list-section {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+  .blog-card {
+    padding: 12px 6px;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-hero {
+    min-height: 60px;
+    padding: 6px 0;
+    font-size: 1rem;
+  }
+  .blog-list-section {
+    padding: 8px 2px;
+    max-width: 100vw;
+  }
+  .blog-card {
+    padding: 7px 2px;
+    font-size: 0.95rem;
+  }
 } 
