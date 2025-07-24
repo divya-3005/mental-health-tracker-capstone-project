@@ -5,13 +5,11 @@ function Journal() {
   const [entry, setEntry] = useState('');
   const [entries, setEntries] = useState([]);
 
-  // Load entries from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem('journalEntries');
     if (saved) setEntries(JSON.parse(saved));
   }, []);
 
-  // Save entries to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem('journalEntries', JSON.stringify(entries));
   }, [entries]);
